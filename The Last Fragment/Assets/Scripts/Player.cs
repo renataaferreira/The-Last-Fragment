@@ -1,49 +1,58 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
     public float velocidade = 5f;
     public float forcaPulo = 10f;
 
-    public Transform groundCheck;
-    public float raioCheck = 0.2f;
-    public LayerMask layerChao;
-
     private Rigidbody2D rb;
-    private SpriteRenderer sr;
 
-    private float movimento;
-    private bool noChao;
+    private Transform checkpointAtual;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        sr = GetComponent<SpriteRenderer>();
     }
 
     void Update()
     {
-        // Movimento
-        movimento = Input.GetAxisRaw("Horizontal");
+        float movimento = 0;
 
-        // Virar personagem
-        if (movimento > 0)
-            sr.flipX = false;
-        else if (movimento < 0)
-            sr.flipX = true;
+        if (Keyboard.current.leftArrowKey.isPressed)
+            movimento = -1;
+        else if (Keyboard.current.rightArrowKey.isPressed)
+            movimento = 1;
 
-        // Verificar chão
-        noChao = Physics2D.OverlapCircle(groundCheck.position, raioCheck, layerChao);
+        rb.linearVelocity = new Vector2(movimento * velocidade, rb.linearVelocity.y);
 
-        // Pulo
-        if (Input.GetKeyDown(KeyCode.Space) && noChao)
+        if (Keyboard.current.spaceKey.wasPressedThisFrame)
         {
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, forcaPulo);
         }
+
+        // Caiu do mapa
+        if (transform.position.y < -5)
+        {
+            Respawn();
+        }
     }
 
-    void FixedUpdate()
+    // =========================
+    // CHECKPOINT
+    // =========================
+    public void SetCheckpoint(Transform novoCheckpoint)
     {
-        rb.linearVelocity = new Vector2(movimento * velocidade, rb.linearVelocity.y);
+        checkpointAtual = novoCheckpoint;
+    }
+
+    public void Respawn()
+    {
+        if (checkpointAtual != null)
+        {
+            transform.position = checkpointAtual.position;
+        }
+
+        rb.linearVelocity = Vector2.zero;
     }
 }
