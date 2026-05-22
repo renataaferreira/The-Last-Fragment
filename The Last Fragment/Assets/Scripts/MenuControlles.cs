@@ -8,7 +8,7 @@ public class MenuController : MonoBehaviour
     // =========================
     public void Jogar()
     {
-        SceneManager.LoadScene("Cutscene inicial"); 
+        SceneManager.LoadScene("Level 1"); 
         // coloque aqui o nome EXATO da sua cena
     }
 
