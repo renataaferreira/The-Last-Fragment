@@ -12,32 +12,32 @@ public class VidaPlayer : MonoBehaviour
     {
         vidaAtual = vidaMaxima;
 
-        if (barraVida != null)
+        if (barraVida == null)
         {
-            barraVida.maxValue = vidaMaxima;
-            barraVida.value = vidaAtual;
+            Debug.LogError("A Barra Vida não foi atribuída no Inspector!");
+            return;
         }
+
+        barraVida.maxValue = vidaMaxima;
+        barraVida.value = vidaAtual;
     }
 
     public void TomarDano(int dano)
     {
         vidaAtual -= dano;
 
-        if (barraVida != null)
-        {
-            barraVida.value = vidaAtual;
-        }
+        barraVida.value = vidaAtual;
+
+        Debug.Log("Vida: " + vidaAtual);
 
         if (vidaAtual <= 0)
         {
+            Debug.Log("Morreu!");
+
             transform.position = Vector3.zero;
 
             vidaAtual = vidaMaxima;
-
-            if (barraVida != null)
-            {
-                barraVida.value = vidaAtual;
-            }
+            barraVida.value = vidaAtual;
         }
     }
 }

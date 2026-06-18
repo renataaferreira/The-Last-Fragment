@@ -7,8 +7,15 @@ public class Player : MonoBehaviour
     public float forcaPulo = 10f;
 
     private Rigidbody2D rb;
-
     private Transform checkpointAtual;
+
+    // =========================
+    // TIRO
+    // =========================
+    public GameObject balaPrefab;
+    public Transform pontoDisparo;
+
+    private bool podeAtirar = false;
 
     void Start()
     {
@@ -31,11 +38,22 @@ public class Player : MonoBehaviour
             rb.linearVelocity = new Vector2(rb.linearVelocity.x, forcaPulo);
         }
 
+        // Atirar com F
+        if (podeAtirar && Keyboard.current.fKey.wasPressedThisFrame)
+        {
+            Instantiate(balaPrefab, pontoDisparo.position, Quaternion.identity);
+        }
+
         // Caiu do mapa
         if (transform.position.y < -5)
         {
             Respawn();
         }
+    }
+
+    public void LiberarTiro()
+    {
+        podeAtirar = true;
     }
 
     // =========================
