@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Chao
   - inimigo
+  - Inimigo
   layers:
   - Default
   - TransparentFX
