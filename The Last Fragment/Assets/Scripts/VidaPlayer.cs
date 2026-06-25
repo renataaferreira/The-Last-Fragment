@@ -8,6 +8,8 @@ public class VidaPlayer : MonoBehaviour
     public int vidaMaxima = 100;
     private int vidaAtual;
 
+    private Transform checkpointAtual;
+
     void Start()
     {
         vidaAtual = vidaMaxima;
@@ -32,12 +34,43 @@ public class VidaPlayer : MonoBehaviour
 
         if (vidaAtual <= 0)
         {
-            Debug.Log("Morreu!");
-
-            transform.position = Vector3.zero;
-
-            vidaAtual = vidaMaxima;
-            barraVida.value = vidaAtual;
+            Morrer();
         }
+    }
+
+    public void RecuperarVida(int quantidade)
+    {
+        vidaAtual += quantidade;
+
+        if (vidaAtual > vidaMaxima)
+        {
+            vidaAtual = vidaMaxima;
+        }
+
+        barraVida.value = vidaAtual;
+
+        Debug.Log("Vida recuperada! Vida atual: " + vidaAtual);
+    }
+
+    public void DefinirCheckpoint(Transform novoCheckpoint)
+    {
+        checkpointAtual = novoCheckpoint;
+    }
+
+    public void Morrer()
+    {
+        Debug.Log("Morreu!");
+
+        if (checkpointAtual != null)
+        {
+            transform.position = checkpointAtual.position;
+        }
+        else
+        {
+            transform.position = Vector3.zero;
+        }
+
+        vidaAtual = vidaMaxima;
+        barraVida.value = vidaAtual;
     }
 }

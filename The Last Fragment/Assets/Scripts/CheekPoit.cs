@@ -6,17 +6,13 @@ public class Checkpoint : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (ativado)
-            return;
-
-        if (collision.CompareTag("Player"))
+        if (collision.CompareTag("Player") && !ativado)
         {
-            Player player = collision.GetComponent<Player>();
+            VidaPlayer vida = collision.GetComponent<VidaPlayer>();
 
-            if (player != null)
+            if (vida != null)
             {
-                player.SetCheckpoint(transform);
-
+                vida.DefinirCheckpoint(transform);
                 ativado = true;
 
                 Debug.Log("Checkpoint ativado!");
