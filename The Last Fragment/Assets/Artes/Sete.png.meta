@@ -1,22 +1,10 @@
 fileFormatVersion: 2
-guid: 466e66c127dbbae45b1364d373c54cb0
+guid: b5c7cb68ee57edd418951e747ca172d1
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -3250219387820148315
-    second: TileMap do jogo_0
-  - first:
-      213: 1918817828293826487
-    second: TileMap do jogo_1
-  - first:
-      213: -3141814676933574044
-    second: TileMap do jogo_2
-  - first:
-      213: 7030440730549675582
-    second: TileMap do jogo_3
-  - first:
-      213: -7068785979324815384
-    second: TileMap do jogo_4
+      213: 7264908678357156157
+    second: Sete_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -49,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 0
+    filterMode: 1
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -87,7 +75,7 @@ TextureImporter:
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 0
+    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -151,111 +139,23 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: TileMap do jogo_0
+      name: Sete_0
       rect:
         serializedVersion: 2
-        x: 217
-        y: 587
-        width: 189
-        height: 191
+        x: 476
+        y: 84
+        width: 198
+        height: 195
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 189, y: 0, z: 0, w: 16}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 5a974eaefa6e4e2d0800000000000000
-      internalID: -3250219387820148315
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMap do jogo_1
-      rect:
-        serializedVersion: 2
-        x: 374
-        y: 397
-        width: 374
-        height: 397
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 7b7d32406a201aa10800000000000000
-      internalID: 1918817828293826487
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMap do jogo_2
-      rect:
-        serializedVersion: 2
-        x: 748
-        y: 397
-        width: 374
-        height: 397
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 462044782380664d0800000000000000
-      internalID: -3141814676933574044
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMap do jogo_3
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 374
-        height: 397
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: e36e9d67894219160800000000000000
-      internalID: 7030440730549675582
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: TileMap do jogo_4
-      rect:
-        serializedVersion: 2
-        x: 374
-        y: 0
-        width: 374
-        height: 397
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8e725159a90a6ed90800000000000000
-      internalID: -7068785979324815384
+      spriteID: d31812ba3f322d460800000000000000
+      internalID: 7264908678357156157
       vertices: []
       indices: 
       edges: []
@@ -264,7 +164,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: c64b375e56e882140b89aa381ca567c6
+    spriteID: 
     internalID: 0
     vertices: []
     indices: 
@@ -272,15 +172,9 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     spriteCustomMetadata:
-      entries:
-      - key: SpriteEditor.SliceSettings
-        value: '{"sliceOnImport":false,"gridCellCount":{"x":3.0,"y":2.0},"gridSpriteSize":{"x":374.0,"y":397.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+      entries: []
     nameFileIdTable:
-      TileMap do jogo_0: -3250219387820148315
-      TileMap do jogo_1: 1918817828293826487
-      TileMap do jogo_2: -3141814676933574044
-      TileMap do jogo_3: 7030440730549675582
-      TileMap do jogo_4: -7068785979324815384
+      Sete_0: 7264908678357156157
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
