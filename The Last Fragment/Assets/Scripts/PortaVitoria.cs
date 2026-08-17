@@ -13,13 +13,13 @@ public class PortaVitoria : MonoBehaviour
         {
             if (PodePassar)
             {
-                Debug.Log("Passando para a próxima fase!");
+                Debug.Log("Porta aberta! Indo para a próxima fase.");
 
                 SceneManager.LoadScene(proximaFase);
             }
             else
             {
-                Debug.Log("Você ainda precisa pegar o objeto de vitória!");
+                Debug.Log("Você ainda precisa pegar o fragmento!");
             }
         }
     }
