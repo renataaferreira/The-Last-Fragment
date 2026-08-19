@@ -6,7 +6,9 @@ public class ObjetoVitoria : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-            Debug.Log("Objeto de vitória coletado!");
+            Debug.Log("FRAGMENTO COLETADO!");
+
+            ContadorFragmentos.Instancia.ColetarFragmento();
 
             PortaVitoria.PodePassar = true;
 
