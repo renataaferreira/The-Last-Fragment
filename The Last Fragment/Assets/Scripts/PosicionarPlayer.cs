@@ -1,16 +1,15 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PosicionarPlayer : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    private void Start()
     {
-        
-    }
+        GameObject spawn = GameObject.Find("SpawnPlayer");
 
-    // Update is called once per frame
-    void Update()
-    {
-        
+        if (spawn != null)
+        {
+            transform.position = spawn.transform.position;
+        }
     }
 }
