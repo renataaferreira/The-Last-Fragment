@@ -5,16 +5,6 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager Instance;
 
-    public enum GameState
-    {
-        Cutscene,
-        Menu,
-        Gameplay,
-        Final
-    }
-
-    public GameState estadoAtual;
-
     private void Awake()
     {
         if (Instance != null && Instance != this)
@@ -24,43 +14,41 @@ public class GameManager : MonoBehaviour
         }
 
         Instance = this;
-
         DontDestroyOnLoad(gameObject);
     }
 
-    public void IrParaCutsceneInicial()
+    private void Start()
     {
-        estadoAtual = GameState.Cutscene;
-        SceneManager.LoadScene("CutsceneInicial");
+        IrParaMenu();
     }
 
     public void IrParaMenu()
     {
-        estadoAtual = GameState.Menu;
         SceneManager.LoadScene("MenuPrincipal");
+    }
+
+    public void IrParaCutscene()
+    {
+        SceneManager.LoadScene("Cutscene");
     }
 
     public void IrParaLevel1()
     {
-        estadoAtual = GameState.Gameplay;
         SceneManager.LoadScene("Level 1");
     }
 
     public void IrParaLevel2()
     {
-        estadoAtual = GameState.Gameplay;
         SceneManager.LoadScene("Level 2");
     }
 
     public void IrParaLevel3()
     {
-        estadoAtual = GameState.Gameplay;
         SceneManager.LoadScene("Level 3");
     }
 
-    public void IrParaCutsceneFinal()
+    public void IrParaCenaFinal()
     {
-        estadoAtual = GameState.Final;
-        SceneManager.LoadScene("Cutscenefinal");
+        SceneManager.LoadScene("CenaFinal");
     }
 }
