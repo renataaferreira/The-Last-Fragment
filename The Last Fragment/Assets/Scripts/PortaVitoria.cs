@@ -5,7 +5,7 @@ public class PortaVitoria : MonoBehaviour
 {
     public static bool PodePassar = false;
 
-    [SerializeField] private string proximaFase = "Level 2";
+    [SerializeField] private string proximaFase;
 
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -13,8 +13,7 @@ public class PortaVitoria : MonoBehaviour
         {
             if (PodePassar)
             {
-                Debug.Log("Indo para a Level 2!");
-
+                Debug.Log("Indo para " + proximaFase + "!");
                 SceneManager.LoadScene(proximaFase);
             }
             else
