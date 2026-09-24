@@ -26,6 +26,10 @@ public class GameManager : MonoBehaviour
     {
         SceneManager.LoadScene("MenuPrincipal");
     }
+    public void IrParaConfiguracoes()
+    {
+        SceneManager.LoadScene("Configuracoes");
+    }
 
     public void IrParaCutscene()
     {

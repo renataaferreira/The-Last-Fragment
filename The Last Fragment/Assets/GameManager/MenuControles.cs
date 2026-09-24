@@ -6,4 +6,9 @@ public class MenuControles : MonoBehaviour
     {
         GameManager.Instance.IrParaCutscene();
     }
+
+    public void AbrirConfiguracoes()
+    {
+        GameManager.Instance.IrParaConfiguracoes();
+    }
 }
