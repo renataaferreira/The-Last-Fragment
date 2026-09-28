@@ -14,12 +14,14 @@ public class Player : MonoBehaviour
     // =========================
     public GameObject balaPrefab;
     public Transform pontoDisparo;
+    private SpriteRenderer sr;
 
     private bool podeAtirar = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        sr = GetComponent<SpriteRenderer>();
     }
 
     void Update()
@@ -27,9 +29,15 @@ public class Player : MonoBehaviour
         float movimento = 0;
 
         if (Keyboard.current.leftArrowKey.isPressed)
+        {
             movimento = -1;
+            sr.flipX = true;
+        }
         else if (Keyboard.current.rightArrowKey.isPressed)
+        {
             movimento = 1;
+            sr.flipX = false;
+        }
 
         rb.linearVelocity = new Vector2(movimento * velocidade, rb.linearVelocity.y);
 
