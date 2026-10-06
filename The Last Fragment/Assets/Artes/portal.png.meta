@@ -184,10 +184,10 @@ TextureImporter:
       name: portal_0
       rect:
         serializedVersion: 2
-        x: 294
-        y: 117
+        x: 299
+        y: 109
         width: 599
-        height: 458
+        height: 459
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,10 +206,10 @@ TextureImporter:
       name: portal_1
       rect:
         serializedVersion: 2
-        x: 1047
-        y: 131
+        x: 1052
+        y: 124
         width: 8
-        height: 9
+        height: 8
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
