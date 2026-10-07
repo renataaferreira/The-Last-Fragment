@@ -1,13 +1,10 @@
 fileFormatVersion: 2
-guid: fb031859f7984194dbb9bdf74493a012
+guid: 4535616646529014f990d27ef65004b8
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -5816642994671486895
-    second: portal_0
-  - first:
-      213: 2720290072527178061
-    second: portal_1
+      213: -2488667012448645119
+    second: quadro0004_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -181,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: portal_0
+      name: quadro0004_0
       rect:
         serializedVersion: 2
-        x: 299
-        y: 109
-        width: 599
-        height: 459
+        x: 369
+        y: 372
+        width: 455
+        height: 964
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -196,30 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1587755a302274fa0800000000000000
-      internalID: -5816642994671486895
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: portal_1
-      rect:
-        serializedVersion: 2
-        x: 1052
-        y: 124
-        width: 8
-        height: 8
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      customData: 
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: d490103886960c520800000000000000
-      internalID: 2720290072527178061
+      spriteID: 10014c6a98a767dd0800000000000000
+      internalID: -2488667012448645119
       vertices: []
       indices: 
       edges: []
@@ -238,8 +213,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      portal_0: -5816642994671486895
-      portal_1: 2720290072527178061
+      quadro0004_0: -2488667012448645119
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

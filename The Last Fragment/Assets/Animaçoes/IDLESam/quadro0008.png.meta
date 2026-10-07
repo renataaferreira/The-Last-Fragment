@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: a74b3b3007e57504abbd60534e879d3f
+guid: 506392ec110972547826b454c06d2530
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 6090172348501891029
-    second: Cenario_1_comCano jogo_0
+      213: -5883947534341912559
+    second: quadro0008_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -178,13 +178,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Cenario_1_comCano jogo_0
+      name: quadro0008_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 1123
-        height: 794
+        x: 369
+        y: 372
+        width: 455
+        height: 963
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -193,8 +193,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 5d79c5ddb73a48450800000000000000
-      internalID: 6090172348501891029
+      spriteID: 118c38a54e4085ea0800000000000000
+      internalID: -5883947534341912559
       vertices: []
       indices: 
       edges: []
@@ -213,7 +213,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Cenario_1_comCano jogo_0: 6090172348501891029
+      quadro0008_0: -5883947534341912559
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
