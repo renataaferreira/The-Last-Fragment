@@ -3,62 +3,158 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    [Header("Movimento")]
     public float velocidade = 5f;
     public float forcaPulo = 10f;
 
     private Rigidbody2D rb;
     private Transform checkpointAtual;
+    private SpriteRenderer sr;
+    private Animator animator;
 
-    // =========================
-    // TIRO
-    // =========================
+    [Header("Tiro")]
     public GameObject balaPrefab;
     public Transform pontoDisparo;
-    private SpriteRenderer sr;
-
     private bool podeAtirar = false;
+
+    [Header("Animações")]
+    private bool estaNoChao = false;
 
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         sr = GetComponent<SpriteRenderer>();
+        animator = GetComponent<Animator>();
+
+        if (rb == null)
+            Debug.LogError("Player precisa de um Rigidbody2D!");
+
+        if (sr == null)
+            Debug.LogError("Player precisa de um SpriteRenderer!");
+
+        if (animator == null)
+            Debug.LogError("Player precisa de um Animator!");
     }
 
     void Update()
     {
-        float movimento = 0;
+        if (rb == null)
+            return;
+
+        if (Keyboard.current == null)
+            return;
+
+        // =========================
+        // MOVIMENTO
+        // =========================
+        float movimento = 0f;
 
         if (Keyboard.current.leftArrowKey.isPressed)
         {
-            movimento = -1;
-            sr.flipX = true;
+            movimento = -1f;
+
+            if (sr != null)
+                sr.flipX = true;
         }
         else if (Keyboard.current.rightArrowKey.isPressed)
         {
-            movimento = 1;
-            sr.flipX = false;
+            movimento = 1f;
+
+            if (sr != null)
+                sr.flipX = false;
         }
 
-        rb.linearVelocity = new Vector2(movimento * velocidade, rb.linearVelocity.y);
+        rb.linearVelocity = new Vector2(
+            movimento * velocidade,
+            rb.linearVelocity.y
+        );
 
-        if (Keyboard.current.spaceKey.wasPressedThisFrame)
+        // =========================
+        // ANIMAÇÃO IDLE E RUN
+        // =========================
+        if (animator != null)
         {
-            rb.linearVelocity = new Vector2(rb.linearVelocity.x, forcaPulo);
+            animator.SetBool("isRunning", movimento != 0f);
+            animator.SetBool("isGrounded", estaNoChao);
         }
 
-        // Atirar com F
-        if (podeAtirar && Keyboard.current.fKey.wasPressedThisFrame)
+        // =========================
+        // PULO
+        // =========================
+        if (Keyboard.current.spaceKey.wasPressedThisFrame
+            && estaNoChao)
         {
-            Instantiate(balaPrefab, pontoDisparo.position, Quaternion.identity);
+            rb.linearVelocity = new Vector2(
+                rb.linearVelocity.x,
+                forcaPulo
+            );
+
+            estaNoChao = false;
+
+            if (animator != null)
+            {
+                animator.SetBool("isGrounded", false);
+                animator.SetTrigger("Jump");
+            }
         }
 
-        // Caiu do mapa
-        if (transform.position.y < -5)
+        // =========================
+        // ATACAR / ATIRAR COM F
+        // =========================
+        if (podeAtirar &&
+            Keyboard.current.fKey.wasPressedThisFrame)
+        {
+            if (animator != null)
+                animator.SetTrigger("Attack");
+
+            if (balaPrefab != null && pontoDisparo != null)
+            {
+                Instantiate(
+                    balaPrefab,
+                    pontoDisparo.position,
+                    Quaternion.identity
+                );
+            }
+            else
+            {
+                Debug.LogWarning(
+                    "Configure Bala Prefab e Ponto Disparo no Inspector."
+                );
+            }
+        }
+
+        // =========================
+        // CAIU DO MAPA
+        // =========================
+        if (transform.position.y < -5f)
         {
             Respawn();
         }
     }
 
+    // =========================
+    // DETECTAR O CHÃO
+    // =========================
+    void OnCollisionStay2D(Collision2D collision)
+    {
+        foreach (ContactPoint2D contato in collision.contacts)
+        {
+            if (contato.normal.y > 0.5f)
+            {
+                estaNoChao = true;
+                return;
+            }
+        }
+    }
+
+    void OnCollisionExit2D(Collision2D collision)
+    {
+        estaNoChao = false;
+    }
+
+    // =========================
+    // LIBERAR TIRO
+    // =========================
     public void LiberarTiro()
     {
         podeAtirar = true;
@@ -80,5 +176,14 @@ public class Player : MonoBehaviour
         }
 
         rb.linearVelocity = Vector2.zero;
+        estaNoChao = false;
+
+        if (animator != null)
+        {
+            animator.SetBool("isRunning", false);
+            animator.SetBool("isGrounded", false);
+            animator.ResetTrigger("Jump");
+            animator.ResetTrigger("Attack");
+        }
     }
 }
