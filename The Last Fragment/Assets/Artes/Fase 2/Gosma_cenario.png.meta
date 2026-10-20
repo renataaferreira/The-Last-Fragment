@@ -190,9 +190,9 @@ TextureImporter:
         x: 0
         y: 0
         width: 1123
-        height: 262
+        height: 400
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -210,11 +210,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 359
-        y: 241
+        y: 396
         width: 136
-        height: 23
+        height: 2
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -231,12 +231,12 @@ TextureImporter:
       name: Gosma_cenario_2
       rect:
         serializedVersion: 2
-        x: 649
-        y: 246
-        width: 407
-        height: 31
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 1031
+        y: 597
+        width: 3
+        height: 1
+      alignment: 9
+      pivot: {x: 0.25312898, y: 0.529578}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -253,7 +253,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: feb82e4eefef05346ab056e5d88da8bf
     internalID: 0
     vertices: []
     indices: 
