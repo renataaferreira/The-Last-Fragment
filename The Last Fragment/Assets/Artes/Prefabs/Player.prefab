@@ -216,8 +216,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f001351523c59c54087936b407e55a2c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::CameraFollow
-  player: {fileID: 3809891563818456925}
+  player: {fileID: 2154274828613971287}
   velocidade: 5
+  offSetX: 0
+  offSetY: 0
 --- !u!114 &491664612473787803
 MonoBehaviour:
   m_ObjectHideFlags: 0
