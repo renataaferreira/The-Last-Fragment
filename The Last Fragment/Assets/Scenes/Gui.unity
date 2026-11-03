@@ -272,7 +272,7 @@ GameObject:
   - component: {fileID: 346282713}
   - component: {fileID: 346282712}
   m_Layer: 5
-  m_Name: TextoFragmentos
+  m_Name: ContadorFragmentos
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
