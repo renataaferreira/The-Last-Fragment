@@ -1,22 +1,77 @@
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+using System.Collections;
 
 public class VidaPlayer : MonoBehaviour
 {
-    public Slider barraVida;
-
     public int vidaMaxima = 100;
     private int vidaAtual;
 
+    private Slider barraVida;
     private Transform checkpointAtual;
 
-    void Start()
+    private void Awake()
     {
         vidaAtual = vidaMaxima;
+    }
+
+    private void OnEnable()
+    {
+        SceneManager.sceneLoaded += AoCarregarCena;
+    }
+
+    private void OnDisable()
+    {
+        SceneManager.sceneLoaded -= AoCarregarCena;
+    }
+
+    private void Start()
+    {
+        StartCoroutine(EncontrarBarraAposCarregar());
+    }
+
+    private void AoCarregarCena(Scene cena, LoadSceneMode modo)
+    {
+        StartCoroutine(EncontrarBarraAposCarregar());
+    }
+
+    private IEnumerator EncontrarBarraAposCarregar()
+    {
+        // Aguarda a cena terminar de carregar.
+        yield return null;
+
+        EncontrarBarraVida();
+        AtualizarBarraVida();
+    }
+
+    private void EncontrarBarraVida()
+    {
+        Slider[] sliders = FindObjectsByType<Slider>(
+            FindObjectsSortMode.None
+        );
+
+        barraVida = null;
+
+        foreach (Slider slider in sliders)
+        {
+            if (slider.gameObject.name == "BarraDeVida")
+            {
+                barraVida = slider;
+                break;
+            }
+        }
 
         if (barraVida == null)
         {
-            Debug.LogError("A Barra Vida não foi atribuída no Inspector!");
+            Debug.LogWarning("BarraDeVida não encontrada na GUI.");
+        }
+    }
+
+    private void AtualizarBarraVida()
+    {
+        if (barraVida == null)
+        {
             return;
         }
 
@@ -27,8 +82,9 @@ public class VidaPlayer : MonoBehaviour
     public void TomarDano(int dano)
     {
         vidaAtual -= dano;
+        vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
 
-        barraVida.value = vidaAtual;
+        AtualizarBarraVida();
 
         Debug.Log("Vida: " + vidaAtual);
 
@@ -41,13 +97,9 @@ public class VidaPlayer : MonoBehaviour
     public void RecuperarVida(int quantidade)
     {
         vidaAtual += quantidade;
+        vidaAtual = Mathf.Clamp(vidaAtual, 0, vidaMaxima);
 
-        if (vidaAtual > vidaMaxima)
-        {
-            vidaAtual = vidaMaxima;
-        }
-
-        barraVida.value = vidaAtual;
+        AtualizarBarraVida();
 
         Debug.Log("Vida recuperada! Vida atual: " + vidaAtual);
     }
@@ -71,6 +123,7 @@ public class VidaPlayer : MonoBehaviour
         }
 
         vidaAtual = vidaMaxima;
-        barraVida.value = vidaAtual;
+
+        AtualizarBarraVida();
     }
 }

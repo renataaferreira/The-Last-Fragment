@@ -1,6 +1,8 @@
 
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+using System.Collections;
 
 public class GameManager : MonoBehaviour
 {
@@ -8,6 +10,10 @@ public class GameManager : MonoBehaviour
 
     private GameObject guiPersistente;
     private bool carregandoGUI = false;
+
+    // Contador de moedas
+    private int quantidadeMoedas = 0;
+    private TMP_Text textoMoedas;
 
     private void Awake()
     {
@@ -60,6 +66,9 @@ public class GameManager : MonoBehaviour
                 {
                     guiPersistente = canvas.transform.root.gameObject;
                     DontDestroyOnLoad(guiPersistente);
+
+                    StartCoroutine(LocalizarTextoMoedas());
+
                     return;
                 }
             }
@@ -85,6 +94,49 @@ public class GameManager : MonoBehaviour
             }
 
             carregandoGUI = false;
+            textoMoedas = null;
+        }
+    }
+
+    // Localiza o texto de moedas na GUI
+    private IEnumerator LocalizarTextoMoedas()
+    {
+        yield return null;
+
+        TMP_Text[] textos = FindObjectsByType<TMP_Text>(
+            FindObjectsSortMode.None
+        );
+
+        textoMoedas = null;
+
+        foreach (TMP_Text texto in textos)
+        {
+            if (texto.gameObject.name == "TextoMoedas")
+            {
+                textoMoedas = texto;
+                break;
+            }
+        }
+
+        AtualizarTextoMoedas();
+    }
+
+    // Adiciona moedas ao contador
+    public void AdicionarMoedas(int quantidade)
+    {
+        quantidadeMoedas += quantidade;
+
+        AtualizarTextoMoedas();
+
+        Debug.Log("Moedas coletadas: " + quantidadeMoedas);
+    }
+
+    // Atualiza o texto da GUI
+    private void AtualizarTextoMoedas()
+    {
+        if (textoMoedas != null)
+        {
+            textoMoedas.text = "Moedas: " + quantidadeMoedas;
         }
     }
 
