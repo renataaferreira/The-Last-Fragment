@@ -980,7 +980,7 @@ GameObject:
   - component: {fileID: 83846531}
   - component: {fileID: 83846532}
   m_Layer: 0
-  m_Name: cenariomanchado_0 (8)
+  m_Name: Parede
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -995,8 +995,8 @@ Transform:
   m_GameObject: {fileID: 83846530}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 139.75, y: -17.281898, z: 0}
-  m_LocalScale: {x: 0.5885424, y: 0.94062686, z: 1}
+  m_LocalPosition: {x: 139.75, y: -16.1756, z: 0}
+  m_LocalScale: {x: 0.5885424, y: 1.0297983, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1212014340}
@@ -1912,7 +1912,7 @@ GameObject:
   - component: {fileID: 212230873}
   - component: {fileID: 212230874}
   m_Layer: 0
-  m_Name: Parede de tijolos com bueiro_0 (1)
+  m_Name: 'Parede '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1927,8 +1927,8 @@ Transform:
   m_GameObject: {fileID: 212230872}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 50.1156, y: -19.7, z: 0}
-  m_LocalScale: {x: 2.4374893, y: 3.0383391, z: 2.3512}
+  m_LocalPosition: {x: 50.1156, y: -17.4874, z: 0}
+  m_LocalScale: {x: 2.4374893, y: 3.5957398, z: 2.3512}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1212014340}
@@ -2343,8 +2343,8 @@ Transform:
   m_GameObject: {fileID: 256018697}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.4175, y: -18.3165, z: 0}
-  m_LocalScale: {x: 0.6167087, y: 1.0028355, z: 1}
+  m_LocalPosition: {x: -25.1051, y: -15.4278, z: 0}
+  m_LocalScale: {x: 0.82694465, y: 1.2357942, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1258049650}
@@ -2394,7 +2394,7 @@ GameObject:
   - component: {fileID: 330555906}
   - component: {fileID: 330555907}
   m_Layer: 0
-  m_Name: Parede de tijolos com bueiro_0 (2)
+  m_Name: Parede
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2409,8 +2409,8 @@ Transform:
   m_GameObject: {fileID: 330555905}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 96, y: -18.91, z: 0}
-  m_LocalScale: {x: 2.3512, y: 2.7471423, z: 2.3512}
+  m_LocalPosition: {x: 96, y: -16.5745, z: 0}
+  m_LocalScale: {x: 2.3512, y: 3.3353055, z: 2.3512}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1212014340}
@@ -3159,7 +3159,7 @@ GameObject:
   - component: {fileID: 450722872}
   - component: {fileID: 450722873}
   m_Layer: 0
-  m_Name: Fundo com canos (4)
+  m_Name: 'Fundo com canos '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3683,8 +3683,8 @@ Transform:
   m_GameObject: {fileID: 460344716}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 78.1, y: 3.5859, z: 0}
-  m_LocalScale: {x: 0.5885424, y: 0.9071681, z: 1}
+  m_LocalPosition: {x: 78.1, y: 5.0412, z: 0}
+  m_LocalScale: {x: 0.5885424, y: 1.2061123, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -3897,8 +3897,8 @@ Transform:
   m_GameObject: {fileID: 508034356}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 96, y: -17.5931, z: 0}
-  m_LocalScale: {x: 2.3512, y: 3.0788004, z: 2.3512}
+  m_LocalPosition: {x: 96, y: -15.558, z: 0}
+  m_LocalScale: {x: 2.3512, y: 3.7738805, z: 2.3512}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1258049650}
@@ -4295,8 +4295,8 @@ Transform:
   m_GameObject: {fileID: 584319843}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.033, y: -18.3771, z: 0}
-  m_LocalScale: {x: 0.63595, y: 1.0203011, z: 1}
+  m_LocalPosition: {x: 26.033, y: -15.7343, z: 0}
+  m_LocalScale: {x: 0.63595, y: 1.233442, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1258049650}
@@ -4312,7 +4312,7 @@ GameObject:
   - component: {fileID: 589846107}
   - component: {fileID: 589846108}
   m_Layer: 0
-  m_Name: cenariomanchado_0 (1)
+  m_Name: Parede
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4327,8 +4327,8 @@ Transform:
   m_GameObject: {fileID: 589846106}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 26.033, y: -19.4617, z: 0}
-  m_LocalScale: {x: 0.63595, y: 0.93288106, z: 1}
+  m_LocalPosition: {x: 26.033, y: -17.0033, z: 0}
+  m_LocalScale: {x: 0.63595, y: 1.1311183, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1212014340}
@@ -5349,7 +5349,7 @@ GameObject:
   - component: {fileID: 720725511}
   - component: {fileID: 720725512}
   m_Layer: 0
-  m_Name: Parede de tijolos com bueiro_0
+  m_Name: 'Parede '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -5364,8 +5364,8 @@ Transform:
   m_GameObject: {fileID: 720725510}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.32, y: -19.6415, z: 0}
-  m_LocalScale: {x: 2.3512, y: 2.8503597, z: 2.3512}
+  m_LocalPosition: {x: 2.81, y: -18.9821, z: 0}
+  m_LocalScale: {x: 2.3512, y: 4.026753, z: 2.3512}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1212014340}
@@ -36706,7 +36706,7 @@ GameObject:
   - component: {fileID: 746399502}
   - component: {fileID: 746399503}
   m_Layer: 0
-  m_Name: cenariomanchado_0 (9)
+  m_Name: Parede
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36721,8 +36721,8 @@ Transform:
   m_GameObject: {fileID: 746399501}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 73.1, y: -19.5, z: 0}
-  m_LocalScale: {x: 0.5885424, y: 0.94062686, z: 1}
+  m_LocalPosition: {x: 73.1, y: -17.226, z: 0}
+  m_LocalScale: {x: 0.5885424, y: 1.123955, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1212014340}
@@ -37297,7 +37297,7 @@ Transform:
   m_GameObject: {fileID: 828288343}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -4.8, y: -3.7, z: 0}
+  m_LocalPosition: {x: 361.58, y: -4.77, z: 0}
   m_LocalScale: {x: 0.2067421, y: 0.25328302, z: 0.46616095}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38433,7 +38433,7 @@ Transform:
   m_GameObject: {fileID: 1012422115}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 208.98, y: -3.98, z: 0}
+  m_LocalPosition: {x: 202.31, y: -3.98, z: 0}
   m_LocalScale: {x: 0.55701786, y: 0.52068156, z: 0.2001}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38604,7 +38604,7 @@ Transform:
   m_GameObject: {fileID: 1035864106}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 203.1179, y: -16.1638, z: 0}
+  m_LocalPosition: {x: 197.12, y: -16.44, z: 0}
   m_LocalScale: {x: 2.4192011, y: 2.150041, z: 1.0486594}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -38988,8 +38988,8 @@ Transform:
   m_GameObject: {fileID: 1061228764}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 139.75, y: -17.281898, z: 0}
-  m_LocalScale: {x: 0.5885424, y: 0.94062686, z: 1}
+  m_LocalPosition: {x: 139.75, y: -15.6422, z: 0}
+  m_LocalScale: {x: 0.5885424, y: 1.2544839, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1258049650}
@@ -39147,7 +39147,7 @@ GameObject:
   - component: {fileID: 1087068673}
   - component: {fileID: 1087068674}
   m_Layer: 0
-  m_Name: cenariomanchado_0 (7)
+  m_Name: Parede
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -39162,8 +39162,8 @@ Transform:
   m_GameObject: {fileID: 1087068672}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 119, y: -18.8, z: 0}
-  m_LocalScale: {x: 0.59177935, y: 0.9139343, z: 1}
+  m_LocalPosition: {x: 119, y: -16.7718, z: 0}
+  m_LocalScale: {x: 0.59177935, y: 1.0774372, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1212014340}
@@ -39364,7 +39364,7 @@ Transform:
   m_GameObject: {fileID: 1092633102}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 172.39, y: -4.13, z: 0}
+  m_LocalPosition: {x: 163.71, y: -4.08, z: 0}
   m_LocalScale: {x: 0.73039395, y: 0.6862903, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -39967,8 +39967,8 @@ Transform:
   m_GameObject: {fileID: 1260353659}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.32, y: -18.4486, z: 0}
-  m_LocalScale: {x: 2.3512, y: 3.1507876, z: 2.3512}
+  m_LocalPosition: {x: 2.32, y: -15.6214, z: 0}
+  m_LocalScale: {x: 2.3512, y: 3.8628654, z: 2.3512}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1258049650}
@@ -40059,8 +40059,8 @@ Transform:
   m_GameObject: {fileID: 1275451194}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 49.81, y: -17.5428, z: 0}
-  m_LocalScale: {x: 2.3512, y: 3.0339441, z: 2.3512}
+  m_LocalPosition: {x: 49.81, y: -15.3848, z: 0}
+  m_LocalScale: {x: 2.3512, y: 3.7599945, z: 2.3512}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1258049650}
@@ -40487,7 +40487,7 @@ Transform:
   m_GameObject: {fileID: 1375613298}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 224.2, y: -0.95, z: 0}
+  m_LocalPosition: {x: 222.49, y: -0.19, z: 0}
   m_LocalScale: {x: 0.8181, y: 0.8181, z: 0.8181}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -40579,8 +40579,8 @@ Transform:
   m_GameObject: {fileID: 1415759677}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 119.0834, y: -16.7328, z: 0}
-  m_LocalScale: {x: 0.59177935, y: 0.9139343, z: 1}
+  m_LocalPosition: {x: 119.0834, y: -15.3177, z: 0}
+  m_LocalScale: {x: 0.59177935, y: 1.2162666, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1258049650}
@@ -40691,7 +40691,7 @@ Rigidbody2D:
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
-  m_Mass: 8
+  m_Mass: 10
   m_LinearDamping: 0
   m_AngularDamping: 0.05
   m_GravityScale: 1
@@ -40999,7 +40999,7 @@ Transform:
   m_GameObject: {fileID: 1535419588}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 220.3, y: -13.7, z: 0}
+  m_LocalPosition: {x: 214.53, y: -13.32, z: 0}
   m_LocalScale: {x: 1.8034903, y: 1.7478043, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41076,7 +41076,7 @@ GameObject:
   - component: {fileID: 1543828681}
   - component: {fileID: 1543828682}
   m_Layer: 0
-  m_Name: cenariomanchado_0
+  m_Name: Parede
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41091,8 +41091,8 @@ Transform:
   m_GameObject: {fileID: 1543828680}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -21.6493, y: -19.2925, z: 0}
-  m_LocalScale: {x: 0.62990624, y: 0.92410207, z: 1}
+  m_LocalPosition: {x: -21.3678, y: -18.8873, z: 0}
+  m_LocalScale: {x: 0.64596885, y: 1.2679579, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1212014340}
@@ -41290,7 +41290,7 @@ Transform:
   m_GameObject: {fileID: 1560480421}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 227.62, y: 1.22, z: 0}
+  m_LocalPosition: {x: 226.81, y: 1.98, z: 0}
   m_LocalScale: {x: 0.8181, y: 0.8181, z: 0.8181}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41459,7 +41459,7 @@ GameObject:
   - component: {fileID: 1653579960}
   - component: {fileID: 1653579961}
   m_Layer: 0
-  m_Name: Fundo com canos (3)
+  m_Name: 'Fundo com canos '
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -41688,7 +41688,7 @@ Transform:
   m_GameObject: {fileID: 1698800821}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.66, y: -4.08, z: 0}
+  m_LocalPosition: {x: 3.68, y: -4.13, z: 0}
   m_LocalScale: {x: 1.4622809, y: 1.3003529, z: 0.7469}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41705,7 +41705,7 @@ GameObject:
   - component: {fileID: 1713918174}
   - component: {fileID: 1713918175}
   m_Layer: 0
-  m_Name: Fundo com canos 1_0
+  m_Name: parede
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -42200,7 +42200,7 @@ Transform:
   m_GameObject: {fileID: 1761173369}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 106.33, y: -0.49, z: 0}
+  m_LocalPosition: {x: 0.59, y: -4.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -42277,8 +42277,8 @@ Transform:
   m_GameObject: {fileID: 1793916241}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 160.3, y: -16.714, z: 0}
-  m_LocalScale: {x: 2.3512, y: 2.794042, z: 2.3512}
+  m_LocalPosition: {x: 160.3, y: -15.7982, z: 0}
+  m_LocalScale: {x: 2.3512, y: 3.956839, z: 2.3512}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1258049650}
@@ -43081,7 +43081,7 @@ GameObject:
   - component: {fileID: 2016257577}
   - component: {fileID: 2016257578}
   m_Layer: 0
-  m_Name: Parede de tijolos com bueiro_0 (3)
+  m_Name: Parede
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -43096,8 +43096,8 @@ Transform:
   m_GameObject: {fileID: 2016257576}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 162.9107, y: -18.7, z: 0}
-  m_LocalScale: {x: 2.6025434, y: 3.2658026, z: 2.3512}
+  m_LocalPosition: {x: 169.7943, y: -17.5322, z: 0}
+  m_LocalScale: {x: 3.8285654, y: 3.5600517, z: 2.3512}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1212014340}
@@ -43963,7 +43963,7 @@ SpriteRenderer:
   m_GlobalIlluminationMeshLod: 0
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_MaskInteraction: 0
   m_Sprite: {fileID: 4794804789137664925, guid: 587e874846c63cf48b92201168f1ab5f, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -43985,7 +43985,7 @@ Transform:
   m_GameObject: {fileID: 2087526817}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 177.99, y: -0.77, z: 0}
+  m_LocalPosition: {x: 181.74, y: -0.67, z: 0}
   m_LocalScale: {x: 5.133259, y: 5.0060363, z: 4.3959}
   m_ConstrainProportionsScale: 0
   m_Children: []
