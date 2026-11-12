@@ -25,9 +25,11 @@ public class GameManager : MonoBehaviour
 
         Instance = this;
         DontDestroyOnLoad(gameObject);
+        
 
         SceneManager.sceneLoaded += AoCarregarCena;
     }
+
 
     private void Start()
     {
@@ -84,6 +86,7 @@ public class GameManager : MonoBehaviour
                 carregandoGUI = true;
                 SceneManager.LoadScene("GUI", LoadSceneMode.Additive);
             }
+
         }
         else
         {
