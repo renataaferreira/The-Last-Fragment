@@ -109,11 +109,16 @@ public class Player : MonoBehaviour
 
             if (balaPrefab != null && pontoDisparo != null)
             {
-                Instantiate(
-                    balaPrefab,
-                    pontoDisparo.position,
-                    Quaternion.identity
-                );
+                GameObject projetil = Instantiate(balaPrefab, pontoDisparo.position, Quaternion.identity);
+                if(sr.flipX)
+                {
+                    projetil.GetComponent<Bala>().direction = new Vector2 (-1, 0);
+                }
+                else
+                {
+                    projetil.GetComponent<Bala>().direction = new Vector2(1, 0);
+                }
+                
             }
             else
             {

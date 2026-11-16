@@ -76761,8 +76761,29 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 1871815426071118304, guid: c1087ce9a3d03df4b8577a35cb834722, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 4702176338170305865}
   m_SourcePrefab: {fileID: 100100000, guid: c1087ce9a3d03df4b8577a35cb834722, type: 3}
+--- !u!1 &4702176338170305864 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1871815426071118304, guid: c1087ce9a3d03df4b8577a35cb834722, type: 3}
+  m_PrefabInstance: {fileID: 4702176338170305863}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &4702176338170305865
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4702176338170305864}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 133d3c08fe47d5840ac432d43f13a2e3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::VidaBoss
+  vidaMaxima: 75
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

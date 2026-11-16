@@ -12,9 +12,10 @@ GameObject:
   - component: {fileID: 7271853841217356235}
   - component: {fileID: 6754134599001626464}
   - component: {fileID: 3492041505039854243}
+  - component: {fileID: -4983349153575939354}
   m_Layer: 0
   m_Name: Ataque do caracol_0
-  m_TagString: Untagged
+  m_TagString: Projetil
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -102,7 +103,7 @@ Rigidbody2D:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7002658055653282085}
-  m_BodyType: 0
+  m_BodyType: 1
   m_Simulated: 1
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
@@ -167,3 +168,19 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.3160097, y: 0.20358518}
   m_EdgeRadius: 0
+--- !u!114 &-4983349153575939354
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7002658055653282085}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5b609cf1c73829f49ac8cce854c82640, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Espinho
+  direction: {x: 0, y: 0}
+  speed: 20
+  dano: 10
+  tempoVida: 2

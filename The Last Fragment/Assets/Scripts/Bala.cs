@@ -8,8 +8,11 @@ public class Bala : MonoBehaviour
     private Rigidbody2D rb;
     private Transform alvoBoss;
 
+    public Vector2 direction;
+
     void Start()
     {
+        /*
         rb = GetComponent<Rigidbody2D>();
 
         // Procura na cena por um GameObject que tenha a Tag "Inimigo"
@@ -34,6 +37,14 @@ public class Bala : MonoBehaviour
             // Se o Boss já morreu ou não foi encontrado, a bala vai reto para a direita
             rb.linearVelocity = Vector2.right * velocidade;
         }
+        
+        */
+        rb = GetComponent<Rigidbody2D>();
+
+        rb.linearVelocity = direction.normalized * velocidade;
+
+        Destroy(gameObject, 3f);
+
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
@@ -48,8 +59,13 @@ public class Bala : MonoBehaviour
             {
                 vidaDoBoss.TomarDanoBoss(danoDaBala);
             }
+
+            Destroy(gameObject);
+        }
+        else if(collision.CompareTag("Chao"))
+        {
+            Destroy(gameObject);
         }
 
-        Destroy(gameObject);
     }
 }

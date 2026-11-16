@@ -1,3 +1,5 @@
+using System.Collections;
+using Unity.Cinemachine;
 using UnityEngine;
 
 public class EspinhoProjetil : MonoBehaviour
@@ -28,12 +30,16 @@ public class EspinhoProjetil : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D outro)
     {
-        VidaPlayer vida = outro.GetComponentInParent<VidaPlayer>();
 
-        if (vida != null)
+        if (outro.CompareTag("Player"))
         {
+            VidaPlayer vida = outro.GetComponentInParent<VidaPlayer>();
             vida.TomarDano(dano);
             Destroy(gameObject);
+        }
+        else if (!outro.CompareTag("Inimigo"))
+        {
+            //Destroy(gameObject);
         }
     }
 }

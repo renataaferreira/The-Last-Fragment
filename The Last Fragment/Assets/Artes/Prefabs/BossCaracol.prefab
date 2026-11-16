@@ -126,6 +126,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Dano
   dano: 10
+  espinhoPrefab: {fileID: 0}
+  spawnPoint: {fileID: 2746443093664809068}
+  attackCooldown: 3
+  angle: 30
 --- !u!50 &3061573627230161695
 Rigidbody2D:
   serializedVersion: 5
