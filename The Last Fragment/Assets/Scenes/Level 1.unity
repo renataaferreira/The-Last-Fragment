@@ -2159,7 +2159,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6934717919946131040, guid: a02af327dd5a2054aa37990e2b75b434, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.22
+      value: -1.54
       objectReference: {fileID: 0}
     - target: {fileID: 6934717919946131040, guid: a02af327dd5a2054aa37990e2b75b434, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2192,6 +2192,10 @@ PrefabInstance:
     - target: {fileID: 6934717919946131040, guid: a02af327dd5a2054aa37990e2b75b434, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8759401124884598760, guid: a02af327dd5a2054aa37990e2b75b434, type: 3}
+      propertyPath: altura
+      value: 2
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects:
@@ -4024,7 +4028,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   velocidade: 5
-  forcaPulo: 8
+  forcaPulo: 9
   balaPrefab: {fileID: 7235010143403618395, guid: 35a9a4537ca20e948bc8fe32e5873fc7, type: 3}
   pontoDisparo: {fileID: 1203684530}
 --- !u!50 &1092759190

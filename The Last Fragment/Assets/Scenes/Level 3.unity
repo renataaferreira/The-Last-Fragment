@@ -276,6 +276,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: c5d610f2a6c791a44957dd7ed1ddda25, type: 3}
+--- !u!114 &33896077 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1848339455406479699, guid: c5d610f2a6c791a44957dd7ed1ddda25, type: 3}
+  m_PrefabInstance: {fileID: 33896076}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b7f7e835a9ff62043878f2ea639d447d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::PortaMovel
 --- !u!1 &74016989
 GameObject:
   m_ObjectHideFlags: 0
@@ -491,7 +502,7 @@ Transform:
   m_GameObject: {fileID: 87053878}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 473.9, y: -3.7, z: 0}
+  m_LocalPosition: {x: 473.9, y: -4.21, z: 0}
   m_LocalScale: {x: 0.46443987, y: 0.46443987, z: 0.46443987}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -79802,6 +79813,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 462023264619679673, guid: 88f54ac0ecaf7944e973344c535fc8b7, type: 3}
+      propertyPath: porta
+      value: 
+      objectReference: {fileID: 33896077}
     - target: {fileID: 4071917911261990009, guid: 88f54ac0ecaf7944e973344c535fc8b7, type: 3}
       propertyPath: m_LocalScale.x
       value: 2.8803663
