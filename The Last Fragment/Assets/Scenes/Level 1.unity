@@ -1588,7 +1588,7 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 442719072}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: bf4505ddc6af2c3408bf87d751f08710, type: 3}
   m_Name: 
@@ -4024,7 +4024,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::Player
   velocidade: 5
-  forcaPulo: 10
+  forcaPulo: 8
   balaPrefab: {fileID: 7235010143403618395, guid: 35a9a4537ca20e948bc8fe32e5873fc7, type: 3}
   pontoDisparo: {fileID: 1203684530}
 --- !u!50 &1092759190
