@@ -83117,7 +83117,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 133d3c08fe47d5840ac432d43f13a2e3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::VidaBoss
-  vidaMaxima: 50
+  vidaMaxima: 10
 --- !u!212 &4702176338170305867 stripped
 SpriteRenderer:
   m_CorrespondingSourceObject: {fileID: 1047851475464059053, guid: c1087ce9a3d03df4b8577a35cb834722, type: 3}
