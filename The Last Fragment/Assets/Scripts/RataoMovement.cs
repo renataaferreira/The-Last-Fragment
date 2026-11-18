@@ -8,7 +8,7 @@ public class RataoMovement : MonoBehaviour
     [SerializeField] private Rigidbody2D rb;
     [SerializeField] private SpriteRenderer sprite;
     private Transform player => GameObject.Find("Player").GetComponent<Transform>();
-    [SerializeField] private AtaqueRatão ataque;
+    [SerializeField] private AtaqueRato ataque;
 
     [Header("Limites da arena")]
     [SerializeField] private Transform limiteEsquerdo;
